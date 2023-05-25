@@ -1,0 +1,274 @@
+body {
+    background-color: #9B9B9B;
+}
+
+.astronaut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.astronaut__helmet {
+    width: 113px;
+    height: 119px;
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    box-shadow: inset -10px -10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.astronaut__helmet::before {
+    content: '';
+    width: 10px;
+    height: 6px;
+    border-radius: 20px;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    background-color: #FFF;
+    transform: rotate(30deg);
+}
+
+.astronaut__helmet__visor {
+    width: 96px;
+    height: 89px;
+    background: #9D00C5;
+    border: 1px solid #000000;
+    box-shadow: inset -10px -10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    margin-top: 6px;
+    position: relative;
+}
+
+.astronaut__helmet__visor::after {
+    content: '';
+    width: 11px;
+    height: 20px;
+    background: #D9D9D9;
+    border-radius: 10px;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+}
+
+.astronaut__oxygen {
+    width: 16px;
+    height: 90px;
+    background-color: #FFC700;
+    position: absolute;
+    left: 45.5%;
+    top: 100px;
+    z-index: -3;
+    border-radius: 10px 0 0 10px;
+}
+
+.astronaut__oxygen::before {
+    content: '';
+    width: 16px;
+    height: 25px;
+    background-color: #FFC700;
+    position: absolute;
+    left: 45.5%;
+    top: -10px;
+    z-index: -3;
+    rotate: 45deg;
+}
+
+.astronaut__oxygen::after {
+    content: '';
+    width: 16px;
+    height: 35px;
+    background-color: #FFC700;
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    z-index: -3;
+    rotate: -45deg;
+}
+
+
+.astronaut__body {
+    width: 85px;
+    height: 115px;
+    background: #EEEEEE;
+    border-radius: 20px;
+    position: relative;
+    top: -10px;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.astronaut__body__bag-left, .astronaut__body__bag-right {
+    width: 10px;
+    height: 21px;
+    background-color: #FF7A00;
+    position: absolute;
+    border-radius: 3px;
+    z-index: 2
+
+}
+
+.astronaut__body__bag-left {
+    left: 10px;
+    top: 0;
+}
+
+.astronaut__body__bag-right {
+    right: 10px;
+    top: 0;
+}
+
+.astronaut__body__bag-right::before, .astronaut__body__bag-left::before {
+    content: '';
+    width: 7px;
+    height: 10px;
+    background-color: #FF7A00;
+    position: absolute;
+    top: 65px;
+    border-radius: 3px;
+}
+
+.astronaut__body__bag-left::before {
+    left: -12px;
+}
+
+.astronaut__body__bag-right::before {
+    right: -12px;
+}
+
+.astronaut__body__terminal {
+    width: 47px;
+    height: 34px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    box-shadow: inset -10px -10px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    position: relative;
+    top: -15px;
+}
+
+.astronaut__body__terminal::before {
+    content: '';
+    width: 5px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #FFF;
+    position: absolute;
+    right: 4px;
+    top: 6px;
+}
+
+.astronaut__legs {
+    display: flex;
+}
+
+.astronaut__legs__leg-left {
+    width: 32px;
+    height: 99px;
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    margin-right: 5px;
+    position: relative;
+    top: -30px;
+    z-index: -2;
+}
+
+.astronaut__legs__leg-right {
+    width: 32px;
+    height: 68px;
+    background: #EEEEEE;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    position: relative;
+    top: -50px;
+}
+
+.astronaut__arms__arm-left {
+    width: 24px;
+    height: 35px;
+    background: #EEEEEE;
+    position: absolute;
+    left: -12px;
+    top: 8px;
+    transform: rotate(50deg);
+}
+
+.astronaut__arms__arm-left::before {
+    content: '';
+    width: 24px;
+    height: 45px;
+    background: #EEEEEE;
+    border-radius: 50px;
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    transform: rotate(-90deg);
+}
+
+.astronaut__arms__arm-left::after {
+    content: '';
+    width: 6px;
+    height: 12px;
+    background: #EEEEEE;
+    border-radius: 50px;
+    position: absolute;
+    left: -10px;
+    top: 18px;
+    transform: rotate(-60deg);
+}
+
+.astronaut__arms__arm-right {
+    width: 24px;
+    height: 67px;
+    background: #EEEEEE;
+    border-radius: 50px;
+    position: absolute;
+    right: -14px;
+    top: 6px;
+    transform: rotate(-30deg);
+}
+
+.astronaut__arms__arm-right::before {
+    content: '';
+    width: 6px;
+    height: 12px;
+    background: #EEEEEE;
+    border-radius: 50px;
+    position: absolute;
+    right: -3px;
+    top: 46px;
+    transform: rotate(-50deg);
+}
+
+.planets__planet-pink {
+    width: 374px;
+    height: 374px;
+    border-radius: 100%;
+    background-color: #39D3F4;
+}
+
+.planets__planet-blue {
+    width: 118px;
+    height: 118px;
+    border-radius: 100%;
+    background-color: #F88BE6;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.8), 
+    inset -20px -20px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+.planets__planet-pink__detail {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    box-shadow: inset 3px 3px 2px rgba(0, 0, 0, 0.25), 
+    inset -1px -2px 1px rgba(255, 255, 255, 0.8);
+}
